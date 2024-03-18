@@ -30,6 +30,8 @@ public class Test {
         sumGPA = Math.round(sumGPA * 10.0) / 10.0;
         double averageScore = sumScore / 10.0;
         double averageGPA = sumGPA / 10.0;
+        averageGPA = Math.round(averageGPA * 100.0) / 100.0;
+        averageScore = Math.round(averageScore * 100.0) / 100.0;
         System.out.println("本学年情况:");
         System.out.println("总分:   " + sumScore + "    平均分: " + averageScore);
         System.out.println("总绩点: " + sumGPA + "   平均绩点: " + averageGPA);
@@ -90,6 +92,8 @@ public class Test {
         sumGPA = Math.round(sumGPA * 10.0) / 10.0;
         double averageScore = sumScore / 5.0;
         double averageGPA = sumGPA / 5.0;
+        averageGPA = Math.round(averageGPA * 100.0) / 100.0;
+        averageScore = Math.round(averageScore * 100.0) / 100.0;
         System.out.println("------------------------------");
         System.out.println("总分:   " + sumScore + "    平均分: " + averageScore);
         System.out.println("总绩点: " + sumGPA + "   平均绩点: " + averageGPA);
