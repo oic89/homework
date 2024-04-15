@@ -54,6 +54,7 @@ public class Operate {
     public void scholarship() {
         students.sort((o1, o2) -> (int) (o2.getAverageGrade() - o1.getAverageGrade()));
         double averageGrade = getAllAverageGrade();
+        //这里用正态分布估算，但是样本量太小，结果不好看，就乘了一个0.5
         double variance = getVariance() * 0.5;
         double one = averageGrade + 1.28 * variance;
         double two = averageGrade + 0.842 * variance;
