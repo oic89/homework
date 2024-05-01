@@ -6,9 +6,9 @@ public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("请输入学生人数：");
-        int numberOfStudents = scanner.nextInt();
+        int nums = scanner.nextInt();
 
-        for (int i = 0; i < numberOfStudents; i++) {
+        for (int i = 0; i < nums; i++) {
             System.out.print("请输入第 " + (i + 1) + " 位学生的成绩（0-100）：");
             try {
                 int score = scanner.nextInt();
