@@ -20,6 +20,7 @@ public class Test {
                 System.out.println("学生 " + (i + 1) + " 的成绩等级是：" + grade + "(" + grade.getMeaning()+")");
             } catch (Exception e) {
                 System.out.println("输入错误，请输入一个有效的成绩。");
+                i--;
                 scanner.next();  // 清除错误的输入
             }
         }
