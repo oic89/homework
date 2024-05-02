@@ -14,6 +14,7 @@ public class Test {
                 int score = scanner.nextInt();
                 if (score < 0 || score > 100) {
                     System.out.println("输入成绩不合法，请输入0-100之间的成绩。");
+                    i--;
                     continue;
                 }
                 Grade grade = Grade.valueOf(score);
