@@ -4,13 +4,13 @@ public class Triangle {
     private double[] sides;
 
     public Triangle(double[] sides) throws IllegalArgumentException {
-        if (!isValidTriangle(sides)) {
+        if (!isTriangle(sides)) {
             throw new IllegalArgumentException("不能构成三角形");
         }
         this.sides = sides;
     }
 
-    private boolean isValidTriangle(double[] sides) {
+    private boolean isTriangle(double[] sides) {
         return (sides[0] + sides[1] > sides[2]) && (sides[1] + sides[2] > sides[0]) && (sides[0] + sides[2] > sides[1]);
     }
 
