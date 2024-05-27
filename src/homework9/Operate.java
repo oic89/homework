@@ -8,6 +8,7 @@ public class Operate {
     private final String studentDataFile = "src\\homework9\\StudentData.txt";
     private final String logFile = "src\\homework9\\log.txt";
 
+
     public void addStudent(Student student) throws IOException {
         List<Student> students = readStudents();
         students.add(student);
